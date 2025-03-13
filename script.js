@@ -15,20 +15,20 @@ function shapeAppear(){
   var width = Math.random() * 150;
 
   if(Math.random() > 0.5){
-    document.getElementById("d").style.borderRadius = "50%";
+    document.getElementById("shape").style.borderRadius = "50%";
   }else{
-    document.getElementById("d").style.borderRadius = "0%";
+    document.getElementById("shape").style.borderRadius = "0%";
   }
 
-  document.getElementById("d").style.top = top + "px";
-  document.getElementById("d").style.left = left + "px";
+  document.getElementById("shape").style.top = top + "px";
+  document.getElementById("shape").style.left = left + "px";
 
-  document.getElementById("d").style.width = width + "px";
-  document.getElementById("d").style.height = width + "px";
+  document.getElementById("shape").style.width = width + "px";
+  document.getElementById("shape").style.height = width + "px";
 
-  document.getElementById("d").style.backgroundColor = getRandomColor();
+  document.getElementById("shape").style.backgroundColor = getRandomColor();
 
-  document.getElementById("d").style.display = "block";
+  document.getElementById("shape").style.display = "block";
   start = new Date().getTime();
 }
 
@@ -37,7 +37,7 @@ function shapeAppearDelay(){
 }
 
 function disappear(){
-  document.getElementById("d").style.display = "none";
+  document.getElementById("shape").style.display = "none";
   var end = new Date().getTime();
   var time = (end - start) / 1000;
   document.getElementById("time").innerHTML = time + " seconds";
@@ -46,4 +46,4 @@ function disappear(){
 
 shapeAppearDelay();
 
-document.getElementById("d").onclick = disappear;
+document.getElementById("shape").onclick = disappear;
