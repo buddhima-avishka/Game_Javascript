@@ -1,5 +1,67 @@
-.d1{
+body{
+  margin: 0px;
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+  background-image: url("Images/background.jpg");
+  background-size: cover;
+}
+
+.time-div{
+  height: 20vh;
+  width: 100%;
+  /* background-color: transparent; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-border{
+  height: 15vh;
+  width: 90%;
+  border: inset;
+  border-color: rgba(167, 126, 45, 0.685);
+  border-width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Images/time-background.jpg");
+  background-size: cover;
+}
+
+.game-area{
+  height: 80vh;
+  width: 100%;
+  /* background-color: transparent; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.game-border{
+  height: 70vh;
+  width: 90%;
+  background-image: url("Images/game-background.jpg");
+  background-size: cover;
+  border: outset;
+  border-color: rgb(150, 124, 124);
+  border-width: 7px;
+  position: absolute;
+  padding: 10px;
+}
+
+.shape{
   background-color: green;
   display: none;
-  position: relative;
+  position: sticky;
+}
+
+.text{
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: cursive;
 }
